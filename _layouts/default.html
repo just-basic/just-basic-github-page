@@ -12,18 +12,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
         rel="stylesheet">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/styles-global.css">
+    <script src="../assets/scripts/script-global.js"></script>
 
 </head>
 
 <body>
-    {% include menu.html %}
-
-    <main class="container">
+    <nav class="navbar navbar-dark bg-dark">
+        {% include menu.html %}
+    </nav>
+    <main class="container-fluid">
         {{ content }}
     </main>
 
     <footer class="bg-dark text-white py-1">
-        <div>&copy; 2025 just-basic <a href="{{ site.baseurl }}/about"><i class="bi bi-question-square-fill"></i></a></div>
+        <div>&copy; 2025 just-basic <a href="{{ site.baseurl }}/about"><i class="bi bi-question-square-fill"></i></a>
+        </div>
     </footer>
 </body>
 

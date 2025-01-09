@@ -12,6 +12,7 @@ main {
     flex-grow: 1;  /* Allow main content to expand to fill the available space */
     overflow-y: auto;  /* Ensure content can scroll */
     padding-bottom: 50px; /* Ensure there's space at the bottom for the footer */
+    
 }
 .navbar-dark .navbar-brand {
     color: #ffffff;
@@ -46,16 +47,6 @@ main {
     
     text-decoration: underline;
   }
-
-  /* footer {
-    background-color: #333;
-    color: white;
-    padding: 0.5rem;
-    position: relative;
-    width: 100%;
-    text-align: right;
-} */
-
 footer {
     background-color: #333;
     color: white;
@@ -63,9 +54,8 @@ footer {
     width: 100%;
     text-align: right;
     justify-content: center;
-    font-size: 0.8rem; /* Smaller font size for footer */
-    margin-top: auto; /* Ensure the footer is at the bottom of the page */
-    /* Initially, footer is not visible, but will always stick to the bottom of the content */
+    font-size: 0.8rem; 
+    margin-top: auto; 
 }
 footer a {
     color: white;
@@ -97,4 +87,19 @@ footer a {
  border-radius: 3px;
  border-style: groove;
 
+}
+
+
+pre {
+  background-color: #424242;
+  border: 1px solid #e9ecef;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
 }
