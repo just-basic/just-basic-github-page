@@ -1,0 +1,42 @@
+---
+layout: 101/101-postgres
+title: Projects
+permalink: /101/101-postgres
+---
+
+
+<div class="container my-5">
+    <h2 class="mb-1">Create a new user with full access</h2>
+    <div class="position-relative">
+        <pre><code id="codeBlock">-- Create a new user
+CREATE USER postgres_name WITH PASSWORD 'password';
+-- CREATE USER postgres_name WITH PASSWORD 'password';
+            
+-- Grant full privileges on all existing tables
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO postgres_name;
+            
+-- Grant full privileges on all existing sequences
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO postgres_name;
+            
+-- (Optional) Grant full privileges on all existing functions
+GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public TO postgres_name;
+            
+-- Ensure full privileges on future tables
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT ALL PRIVILEGES ON TABLES TO postgres_name;
+
+-- Ensure full privileges on future sequences
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT ALL PRIVILEGES ON SEQUENCES TO postgres_name;
+
+-- (Optional) Ensure full privileges on future functions
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT ALL PRIVILEGES ON FUNCTIONS TO postgres_name;</code></pre>
+        <button class="btn btn-sm btn-outline-secondary copy-btn" onclick="copyCode()">
+            <i class="bi bi-clipboard"></i> Copy
+        </button>
+    </div>
+</div>
+
+
+
