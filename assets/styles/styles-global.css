@@ -88,8 +88,23 @@ footer a {
  border-style: groove;
 
 }
+.img-icon{
+  max-height: 3rem;
+  max-width: 3rem;
 
-
+}
+.list-container{
+  padding: 0.5rem;
+  margin: 2px;
+  border-color: white;
+  border-radius: 3px;
+  border-style: groove;
+  display: flex;
+}
+.list-item{
+  text-align: center;
+  font-weight: bold;
+}
 pre {
   background-color: #424242;
   border: 1px solid #e9ecef;

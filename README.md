@@ -1,7 +1,10 @@
 # just-basic-github-page
 Project for static html github page
 
-# test
+# RUN NOTES
+```
+jekyll serve
+```
 
 
 
@@ -14,4 +17,4 @@ Home
 about
 edu/courses/projects/other/articles?
 tools
-manage from some blog
+manage from some blog.
